@@ -1,4 +1,3 @@
-
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Home, CreditCard, TrendingUp, Settings, Bell } from 'lucide-react-native';
@@ -30,27 +29,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="cards"
         options={{
-          title: 'Cards',
+          title: 'NFC Cards',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon icon={CreditCard} color={color} focused={focused} />
           ),
         }}
       />
       <Tabs.Screen
-        name="markets"
+        name="scan"
         options={{
-          title: 'Markets',
+          title: 'Scan',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon icon={TrendingUp} color={color} focused={focused} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="notifications"
-        options={{
-          title: 'Notifications',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon icon={Bell} color={color} focused={focused} />
           ),
         }}
       />
@@ -61,12 +51,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon icon={Settings} color={color} focused={focused} />
           ),
-        }}
-      />
-      <Tabs.Screen
-        name="analytics"
-        options={{
-          href: null, // Hide from tab bar
         }}
       />
     </Tabs>
