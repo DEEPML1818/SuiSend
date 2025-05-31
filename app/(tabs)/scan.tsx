@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '@/context/ThemeContext';
-import { Scan, AlertCircle, CheckCircle2 } from 'lucide-react-native';
+import { Scan, CircleAlert as AlertCircle, CircleCheck as CheckCircle2 } from 'lucide-react-native';
 import NfcService from '@/services/NfcService';
 import Animated, { 
   useAnimatedStyle, 

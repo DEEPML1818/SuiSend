@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Home, CreditCard, TrendingUp, Settings, Bell } from 'lucide-react-native';
+import { Chrome as Home, CreditCard, TrendingUp, Settings, Bell } from 'lucide-react-native';
 import TabBarIcon from '@/components/navigation/TabBarIcon';
 
 export default function TabLayout() {
